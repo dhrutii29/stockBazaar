@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Bazaar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/views/css/styles.css"/>
+    <style>
+        a {
+            text-decoration: none;
+        }
+        form p {
+            font-size: 1.7rem;
+            margin-top: 20px;
+        }
+        form p a {
+            color: #0047b4;
+        }
+        .transfer-section {
+            background: #fff;
+        }
+        .alert {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f8d7da;
+            color: rgb(158, 9, 9);
+            border-radius: 10px;
+            font-size: 1.7rem;
+        }
+        .closebtn {
+            margin-left: 15px;
+            color: #666;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .closebtn:hover {
+            color: black;
+        }
+        .alert-suc{
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #d4edda;
+            color: rgb(14, 121, 4);
+            border-radius: 10px;
+            font-size: 1.7rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo"><span>Stock</span>Bazaar</a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="fas fa-bars"></label>
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="news">News</a>
+            <a href="login" class="btn login">Login</a>
+
+        </nav>
+    </header>
+    <section class="contact transfer-section" id="contact">
+        <div class="image">
+            <img src="/views/images/undraw_secure_login_pdn4.svg" alt="messageUs"/>
+        </div>
+        
+        <form action="/login/signup" method="POST">
+            
+            <h1 class="heading">Register</h1>
+            <div class="inputBox">
+                <input type="text" pattern="[a-zA-Z ]+" id="name" name="name" required>
+                <label for="name">Full Name</label>
+            </div>
+            <div class="inputBox">
+                <input type="text" id="contacts" pattern=".{10}"
+                name="contacts" required>
+                <label for="contacts">Contact Number</label>
+            </div>
+            <div class="inputBox">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email Address</label>
+            </div>
+            <div class="inputBox">
+                <input type="number" id="balance" max="1000000" name="balance" required>
+                <label for="balance">Account Balance</label>
+            </div>
+            
+            <div class="inputBox">
+                <input type="password" pattern=".{9,}" id="password" name="password" required>
+                <label for="password">Password</label>
+            </div>
+            
+            <input type="submit" class="btn" value="Register">
+            <p>Already have an account? <a href="/login/">Login</a></p>
+            
+        </form>
+    </section>
+    <footer class="footer-distributed">
+
+        <div class="footer-right">
+
+            <a href="https://www.instagram.com/dhrutiii._/" target="_blank" class="insta"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/DhrutiSeksaria" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/dhrutiseksaria/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/dhrutii29" target="_blank" class="github"><i class="fab fa-github"></i></a>
+
+        </div>
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a class="link-1" href="">Home</a>
+
+                <a href="news">News</a>
+
+                <a href="/#features">Features</a>
+            </p>
+
+            <p>StockBazaar &copy; 2021</p>
+        </div>
+
+    </footer>
+</body>
+</html>

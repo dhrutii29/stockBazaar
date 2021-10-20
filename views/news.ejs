@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stocks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/views/css/styles.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        a {
+            text-decoration: none;
+        }
+        header {
+            max-height: 75px;
+        }
+        .hero {
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-gap: .5rem;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .card {
+            margin: auto;
+        }
+        .card-body h5,p,a,.btn {
+            font-size: 1.7rem;
+        }
+        .news {
+            align-self: end;
+        }
+    </style>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <a href="/" class="logo"><span>Stock</span>Bazaar</a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="fas fa-bars"></label>
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="news">News</a>
+            <a href="login" class="btn login">Login</a>
+
+        </nav>
+    </header>
+    <div class="container hero" id="card">
+
+    </div>
+    <footer class="footer-distributed">
+
+        <div class="footer-right">
+
+            <a href="https://www.instagram.com/dhrutiii._/" target="_blank" class="insta"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/DhrutiSeksaria" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/dhrutiseksaria/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/dhrutii29" target="_blank" class="github"><i class="fab fa-github"></i></a>
+
+        </div>
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a class="link-1" href="/">Home</a>
+
+                <a href="news">News</a>
+
+                <a href="/#features">Features</a>
+            </p>
+
+            <p>StockBazaar &copy; 2021</p>
+        </div>
+
+    </footer>
+</body>
+<script src="/views/scriptnews.js"></script>
+	<script>
+		getData();
+	</script>
+</html>
